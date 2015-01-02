@@ -29,7 +29,6 @@ elsif(-e $file_new && -e $file_old)
 
 `sudo arp-scan --interface=wlan0 '$subnet' > $file_new`;
 
-
 my $diffs = diff $file_new => $file_old;
 
 print $diffs;
